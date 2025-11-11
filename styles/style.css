@@ -1,21 +1,41 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
+
 .page {
-  /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
+  /* сохраните в разметке и стилях класс page у тега body. 
+  Он удобен, чтобы составлять селекторы для разных цветовых тем. */
+  
   font-family: var(--font-family);
   background-color: var(--bg-color);
   background-image: var(--bg-image);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  padding-inline: 10px;
 }
 
 .header {
+  display: grid;
+  grid-template-rows: 1fr min-content 1fr;
+  height: 100vh;
+  min-height: 668px;
+  align-items: center;
+  padding-block: 10px;
 }
+
 .decorated-zone {
 }
+
 .rec {
 }
+
 .header__theme-menu {
+  justify-self: end;
 }
 .header__theme-menu-list {
+  display: grid;
+  gap: 10px;
 }
 .header__theme-menu-item {
 }
@@ -29,31 +49,84 @@
 }
 .header__theme-menu-button_type_dark {
 }
+
 .header_title {
+  justify-self: start;
+  color: var(--header-color);
+  text-shadow: 4px 4px 0 var(--accent-color);
+  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  line-height: 83%;
 }
+
 .header_text {
+  align-self: end;
 }
+
 .title_decor {
+  color: var(--bg-color);
+  background-color: var(--accent-color);
+  font-size: var(--regular-font-size);
+  font-weight: 700;
 }
+
 .main {
+  margin-block: 40px;
+  display: grid;
+  gap: 50px;
 }
+
 .section {
+  display: grid;
+  gap: 20px;
 }
+
 .section_title {
+  color: var(--accent-color);
+  font-size: var(--regular-font-size);
+  font-weight: 700;
 }
+
 .card {
+  display: grid;
+  gap: 10px;
 }
+
 .card_text {
+  color: var(--text-color);
+  font-size: var(--regular-font-size);
+  font-weight: 400;
 }
+
 .link {
+  text-decoration: none;
+  text-shadow: 2px 2px 0 var(--accent-color);
 }
+
 .regular_title {
+  font-weight: 400;
 }
+
 .gallery {
+  display: grid;
+  gap: 10px;
 }
+
 .gallery_image {
+  width: 100%;
+  height: 100%;
 }
+
 .footer {
+  display: grid;
+  height: 100vh;
+  min-height: 668px;
 }
+
 .footer_title {
+  justify-content: center;
+  align-self: center;
+  color: var(--header-color);
+  text-shadow: 2px 2px 0 var(--accent-color);
+  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  line-height: 83%;
 }
