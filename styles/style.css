@@ -25,6 +25,7 @@
 
 .decorated-zone {
   position: relative;
+  
 }
 
 .decorated-zone::before {
@@ -34,7 +35,7 @@
   border-top: 1px solid var(--accent-color);
   border-right: 1px solid var(--accent-color);
   position: absolute;
-  top: 0;
+  top: 10px;
   right: 0;
 }
 
@@ -45,13 +46,13 @@
   border-bottom: 1px solid var(--accent-color);
   border-left: 1px solid var(--accent-color);
   position: absolute;
-  bottom: 0;
+  bottom: 10px;
   left: 0;
 }
 
 .rec {
   position: absolute;
-  top: 0;
+  top: 10px;
   right: 0;
   display: flex;
   align-items: center;
@@ -94,7 +95,7 @@
   font-family: var(--font-family);
   font-size: var(--regular-font-size);
   font-weight: 400;
-  line-height: 1;
+  line-height: 18px;
   height: 26px;
   text-transform: lowercase;
   color: var(--accent-color);
@@ -143,6 +144,7 @@
   color: var(--accent-color);
   font-size: var(--regular-font-size);
   font-weight: 700;
+  line-height: 23.4px;
 }
 
 .card {
@@ -154,6 +156,7 @@
   color: var(--text-color);
   font-size: var(--regular-font-size);
   font-weight: 400;
+  line-height: 23.4px;
 }
 
 .link {
