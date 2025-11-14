@@ -9,4 +9,30 @@
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
   */
+
+  --bg-image: url("../images/cover-image-dark.png");
+  --bg-color: #000028;
+  --accent-color: #ff0070;
+  --text-color: #f1b2ce;
+  --header-color: #db00ff;
+  --title-color: #ff0070;
+  --title-decor: #000028;
+  --decor-corner: #ff0070;
+  --button-color: #ff0070;
+  --link-hover: rgba(255, 0, 112, 0.4);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg-image: url("../images/cover-image-dark.png");
+    --bg-color: #000028;
+    --accent-color: #ff0070;
+    --text-color: #f1b2ce;
+    --header-color: #db00ff;
+    --title-color: #ff0070;
+    --title-decor: #000028;
+    --decor-corner: #ff0070;
+    --button-color: #ff0070;
+    --link-hover: rgba(255, 0, 112, 0.4);
+  }
 }
