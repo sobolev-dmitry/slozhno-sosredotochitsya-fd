@@ -4,7 +4,7 @@
   /* сохраните в разметке и стилях класс page у тега body. 
   Он удобен, чтобы составлять селекторы для разных цветовых тем. */
 
-  font-family: var(--font-family);
+  font-family: var(--font-family, monospace);
   background-color: var(--bg-color);
   background-image: var(--bg-image);
   background-size: cover;
@@ -55,8 +55,8 @@
   align-items: center;
   gap: 10px;
   color: var(--accent-color);
-  font-size: var(--regular-font-size);
-  font-family: var(--font-family);
+  font-size: var(--regular-font-size, 18px);
+  font-family: inherit;
   font-weight: 400;
   line-height: 139%;
   text-transform: uppercase;
@@ -87,8 +87,8 @@
   padding: 2px 13px;
   background-color: transparent;
   border: none;
-  font-family: var(--font-family);
-  font-size: var(--regular-font-size);
+  font-family: inherit;
+  font-size: var(--regular-font-size, 18px);
   font-weight: 400;
   line-height: 100%;
   min-height: 26px;
@@ -126,7 +126,7 @@
   color: var(--title-decor-color);
   background-color: var(--accent-color);
   font-family: inherit;
-  font-size: var(--regular-font-size);
+  font-size: var(--regular-font-size, 18px);
   line-height: 130%;
   font-weight: 700;
 }
@@ -146,7 +146,7 @@
 .section_title {
   color: var(--title-color);
   font-family: inherit;
-  font-size: var(--regular-font-size);
+  font-size: var(--regular-font-size, 18px);
   font-weight: 700;
   line-height: 130%;
 }
@@ -159,7 +159,7 @@
 .card_text {
   color: var(--text-color);
   font-family: inherit;
-  font-size: var(--regular-font-size);
+  font-size: var(--regular-font-size, 18px);
   font-weight: 400;
   line-height: 130%;
 }

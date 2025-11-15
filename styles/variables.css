@@ -10,9 +10,9 @@
   --header-color: #db00ff;
   --title-color: #ff0070;
   --title-decor-color: #000028;
-  --decor-corner: #FF0070;
-  --button-color: #FF0070;
-  --link-hover: rgba(255, 0, 112, 0.4); 
-  --font-family: 'IBM Plex mono', monospace;
+  --decor-corner: #ff0070;
+  --button-color: #ff0070;
+  --link-hover: rgba(255, 0, 112, 0.4);
+  --font-family: "IBM Plex mono", monospace;
   --regular-font-size: 18px;
 }
