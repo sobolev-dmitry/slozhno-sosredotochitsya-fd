@@ -15,4 +15,5 @@
   --link-hover: rgba(255, 0, 112, 0.4);
   --font-family: "IBM Plex mono", monospace;
   --regular-font-size: 18px;
+  --rec-decor-visibility: visible;
 }

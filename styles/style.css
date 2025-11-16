@@ -52,6 +52,7 @@
   top: 10px;
   right: 10px;
   display: flex;
+  visibility: var(--rec-decor-visibility);
   align-items: center;
   gap: 10px;
   color: var(--accent-color);
@@ -94,6 +95,7 @@
   min-height: 26px;
   text-transform: lowercase;
   color: var(--button-color);
+  cursor: pointer;
 }
 .header__theme-menu-button_active {
   border: 1px solid var(--button-color);
@@ -104,7 +106,7 @@
   outline: 1px solid var(--link-hover);
 }
 
-.header__theme-menu-button_active:hover {
+.header__theme-menu-button:focus {
   outline: none;
 }
 
@@ -238,7 +240,7 @@
   }
 
   .header_text {
-    max-width: 364px;
+    inline-size: 364px;
     justify-self: end;
   }
 
@@ -251,37 +253,37 @@
     padding-inline: 20px;
   }
 
-  .section_first {
+  .section_focus {
     grid-template-columns: 1fr 2fr;
     grid-auto-flow: row;
   }
 
-  .section_first .section_title {
+  .section_focus .section_title {
     grid-column: 1 / 2;
     grid-row: 1;
   }
 
-  .section_first .card {
+  .section_focus .card {
     grid-column: 2;
     grid-row: auto;
   }
 
-  .section_second .section_title {
+  .section_concentration .section_title {
     max-width: 236px;
   }
 
-  .section-third {
+  .section_recommendations {
     grid-template-columns: 1fr 2fr;
     grid-template-rows: 23px auto;
     grid-auto-flow: row;
   }
 
-  .section-third .section_title {
+  .section_recommendations .section_title {
     grid-column: 1 / 2;
     grid-row: 1;
   }
 
-  .section-third .card {
+  .section_recommendations .card {
     grid-column: 2;
     grid-row: auto;
   }
@@ -341,27 +343,27 @@
   }
 
   .header_text {
-    max-width: 491px;
+    inline-size: 491px;
   }
 
   .section_title {
     max-width: 315px;
   }
 
-  .section_first {
+  .section_focus {
     grid-template-columns: auto 2fr;
   }
 
-  .section_second .section_title {
+  .section_concentration .section_title {
     max-width: 315px;
     grid-column: 1 / 4;
   }
 
-  .section_second {
+  .section_concentration {
     grid-template-columns: repeat(3, 1fr);
   }
 
-  .section_second .card {
+  .section_concentration .card {
     grid-template-rows: min-content auto;
   }
 

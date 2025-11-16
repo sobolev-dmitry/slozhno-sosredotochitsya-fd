@@ -20,6 +20,7 @@
   --decor-corner: #ff0070;
   --button-color: #ff0070;
   --link-hover: rgba(255, 0, 112, 0.4);
+  --rec-decor-visibility: visible;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -34,5 +35,6 @@
     --decor-corner: #ff0070;
     --button-color: #ff0070;
     --link-hover: rgba(255, 0, 112, 0.4);
+    --rec-decor-visibility: visible;
   }
 }
